@@ -6,7 +6,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color: white;
     font-family: 'Lora', serif;
 }
 h1,h2,h3,h4,h5,h6{
@@ -14,7 +14,12 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
 }
 .fa{
-    font-size: 30px;
+    color: white;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
 }
 
 
@@ -24,7 +29,7 @@ h1,h2,h3,h4,h5,h6{
     color: #000;
     text-align: center;
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section-1 h1 {
     font-size: 5rem;
@@ -52,15 +57,34 @@ h1,h2,h3,h4,h5,h6{
 .section-2{
     min-height: 100vh;
     background-color: #0099ff;
-    display: flex;
     align-items: center;
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section-2-content{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: 0 10%;
 }
+.section-2 .work-title{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+.section-2 .work-wrapper{
+    margin: 1% 5%;
+    /* border: 2px solid blue; */
+}
+.work-wrapper .work-exp-list-item{
+    list-style-type: disclosure-closed;
+    margin-bottom: 3%;
+}
+.work-wrapper .work-exp-heading{
+    font-size: 2rem;
+}
+.work-wrapper .work-exp-time{
+    font-size: 1.5rem;
+}
+
 .section-2 #lower-curve{
     position: absolute;
     bottom: 0;
@@ -75,37 +99,165 @@ h1,h2,h3,h4,h5,h6{
     min-height: 100vh;
     background-color: #fff;
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section-3-content{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: 5% 7%;
 }
 .section-3-content-heading{
+    width: 100%;
     text-align: center;
     font-size: 3rem;
 }
 .project-wrapper{
     display: flex;
-    margin: 3%;
-    border: 2px solid black;
+    margin: 1% 3%;
+    background: linear-gradient(to bottom, white, #70d4e545);
+    /* border: 2px solid black; */
+}
+.project-wrapper:hover{
+    box-shadow: 2px 2px 5px #8acbf6;
+}
+.project-wrapper .project-image-wrapper{
+    width: 40%;
+    padding: 2%;
+}
+.project-wrapper .project-image{
+    width: 100%;
+    height: 100%;
+}
+.project-wrapper .project-details-wrapper{
+    width: 60%;
+    margin: 2%;
+}
+.project-wrapper .project-details-wrapper .project-title{
+    text-align: center;
+    font-size: 2rem;
 }
 
   
 
 .section-4{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #fff;
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section-4-content{
-    border: 2px solid yellow;
-    margin: 5% 7%;
+    width: 90%;
+    margin: 3% auto;
+    /* border: 2px solid yellow; */
 }
 .section-4-content-heading{
     text-align: center;
     font-size: 3rem;
+}
+.skill-wrapper{
+    width: 50%;
+    float: left;
+    /* border: 2px solid blueviolet; */
+}
+.skill-wrapper .skill-heading{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+.skill-wrapper .skill-lists-wrapper{
+    margin: 8% 15% 5%;
+}
+.skill-wrapper .skill-item-wrapper{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+}
+.skill-wrapper .skill-item-wrapper:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 40px solid;
+    border-bottom: 51px solid white;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n){
+    background-color: #0099ff;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n+1){
+    background-color: #0033ff;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n+2){
+    background-color: #00eeff;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n):after{
+    border-left-color: #0099ff;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n+1):after{
+    border-left-color: #0033ff;
+}
+.skill-wrapper .skill-item-wrapper:nth-child(3n+2):after{
+    border-left-color: #00eeff;
+}
+.skill-wrapper .skill-item-wrapper .skill-item{
+    width: 100%;
+}
+.interest-wrapper{
+    width: 50%;
+    float: left;
+    /* border: 2px solid blueviolet; */
+}
+.interest-wrapper .interest-heading{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}
+.interest-wrapper .interest-lists-wrapper{
+    margin: 8% 15% 5%;
+}
+.interest-wrapper .interest-item-wrapper{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+}
+.interest-wrapper .interest-item-wrapper:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 40px solid;
+    border-bottom: 51px solid white;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n){
+    background-color: #0099ff;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n+1){
+    background-color: #0033ff;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n+2){
+    background-color: #00eeff;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n):after{
+    border-left-color: #0099ff;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n+1):after{
+    border-left-color: #0033ff;
+}
+.interest-wrapper .interest-item-wrapper:nth-child(3n+2):after{
+    border-left-color: #00eeff;
+}
+.interest-wrapper .interest-item-wrapper .interest-item{
+    width: 100%;
 }
 
 
@@ -116,7 +268,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     align-items: center;
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .section-5 #upper-curve{
     position: absolute;
@@ -125,18 +277,33 @@ h1,h2,h3,h4,h5,h6{
 .section-5-content{
     width: 100%;
     height: 100%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+}
+.section-5 .contact-wrapper .contact-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
 }
 .section-5  .contact-links{
     list-style: none;
+    padding: 0;
 }
 .section-5 .contact-links .contact-link-button{
     display: inline-block;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid yellow;
+    padding: 10px 15px;
+    width: 60px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #00e;
+    border-radius: 25%;
+    /* border: 1px solid yellow; */
+}
+.section-5 .contact-links .contact-link-button:hover{
+    background-color: #00a;
 }
