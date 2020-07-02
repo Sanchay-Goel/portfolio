@@ -44,7 +44,6 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     width: 100%;
     position: relative;
-    z-index: 2;
 }
 .section-1 .section-1-content .my-image{
     width: 25%;
@@ -53,6 +52,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .section-1 .section-1-content .introduction{
     width: 65%;
+    z-index: 2;
 }
 .section-1 .lower-curve-wrapper{
     z-index: -1;
