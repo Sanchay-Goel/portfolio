@@ -82,6 +82,15 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     font-size: 3rem;
     margin-bottom: 4%;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
+}
+.section-2 .work-title:hover{
+    background-size: 35% 2px;
 }
 .section-2 .work-wrapper{
     margin: 1% 5%;
@@ -150,6 +159,15 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     text-align: center;
     font-size: 3rem;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
+}
+.section-3-content-heading:hover{
+    background-size: 20% 2px;
 }
 .project-wrapper{
     display: flex;
@@ -193,6 +211,8 @@ h1,h2,h3,h4,h5,h6{
 .section-4-content{
     width: 90%;
     margin: 3% auto 0;
+    display: flex;
+    flex-wrap: wrap;
     /* border: 2px solid yellow; */
 }
 .section-4-content-heading{
@@ -200,14 +220,24 @@ h1,h2,h3,h4,h5,h6{
     font-size: 3rem;
 }
 .skill-wrapper{
-    width: 50%;
-    float: left;
+    width: 100%;
+    /* float: left; */
     /* border: 2px solid blueviolet; */
 }
 .skill-wrapper .skill-heading{
     text-align: center;
     width: 100%;
     font-size: 3rem;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
+}
+
+.skill-wrapper .skill-heading:hover {
+    background-size: 35% 2px;
 }
 .skill-wrapper .skill-lists-wrapper{
     margin: 8% 15% 5%;
@@ -254,14 +284,23 @@ h1,h2,h3,h4,h5,h6{
     font-size: 80%;
 }
 .interest-wrapper{
-    width: 50%;
-    float: left;
+    width: 100%;
+    /* float: left; */
     /* border: 2px solid blueviolet; */
 }
 .interest-wrapper .interest-heading{
     text-align: center;
     width: 100%;
     font-size: 3rem;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
+}
+.interest-heading:hover {
+    background-size: 35% 2px;
 }
 .interest-wrapper .interest-lists-wrapper{
     margin: 8% 15% 5%;
@@ -310,6 +349,49 @@ h1,h2,h3,h4,h5,h6{
 
 
 .section-5{
+    min-height: 50vh;
+    background: linear-gradient(to bottom, white, #00e);
+    align-items: center;
+    position: relative;
+    /* border: 3px solid red; */
+}
+.section-5-content{
+    height: 100%;
+    /* border: 2px solid yellow; */
+    margin: 10% 15% 5%;
+    z-index: 1;
+}
+.section-5 .cp-wrapper .cp-heading{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5%;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
+}
+.section-5 .cp-wrapper .cp-heading:hover {
+    background-size: 35% 2px;
+}
+.section-5 .cp-links-wrapper{
+    display: flex;
+}
+.section-5 .cp-link{
+    width: 15%;
+    margin: 1% auto;
+}
+.section-5 .cp-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    /* border: 2px solid white; */
+}
+
+
+.section-6{
     min-height: 60vh;
     background-color: #0099ff;
     display: flex;
@@ -317,11 +399,14 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     /* border: 3px solid red; */
 }
-.section-5 #upper-curve{
+.section-6 #upper-curve{
     position: absolute;
     top: 0;
 }
-.section-5-content{
+.section-6 #upper-curve path{
+    fill: #00e;
+}
+.section-6-content{
     width: 100%;
     height: 100%;
     /* border: 2px solid yellow; */
@@ -331,16 +416,25 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     z-index: 1;
 }
-.section-5 .contact-wrapper .contact-heading{
+.section-6 .contact-wrapper .contact-heading{
     width: 100%;
     text-align: center;
     font-size: 3rem;
+	display: inline-block;
+	background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .5s ease;
 }
-.section-5  .contact-links{
+.section-6 .contact-wrapper .contact-heading:hover {
+    background-size: 100% 2px;
+}
+.section-6  .contact-links{
     list-style: none;
     padding: 0;
 }
-.section-5 .contact-links .contact-link-button{
+.section-6 .contact-links .contact-link-button{
     display: inline-block;
     margin-left: 2.5%;
     padding: 2.5%;
@@ -351,11 +445,21 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 25%;
     /* border: 1px solid yellow; */
 }
-.section-5 .contact-links .contact-link-button:hover{
+.section-6 .contact-links .contact-link-button:hover{
     background-color: #00a;
 }
 
 
+@media (min-width: 768px) {
+    .section-4-content {
+        flex-wrap: nowrap;
+    }
+
+    .skill-wrapper,
+    .interest-wrapper {
+        width: 50%;
+    }
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width:550px){
@@ -380,7 +484,10 @@ h1,h2,h3,h4,h5,h6{
     .section-3-content{
         margin: 0 4% 5%;
     }
-    .project-wrapper{
+    .project-wrapper:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    .project-wrapper:nth-child(even){
         flex-direction: column;
     }
     .project-wrapper .project-image-wrapper{
@@ -395,10 +502,14 @@ h1,h2,h3,h4,h5,h6{
     .interest-wrapper .interest-heading{
         font-size: 2.5rem;
     }
-    .section-5 .contact-wrapper .contact-heading{
+    .skill-wrapper .skill-item-wrapper,
+    .interest-wrapper .interest-item-wrapper{
+        font-size: 20px;
+    }
+    .section-6 .contact-wrapper .contact-heading{
         font-size: 2.5rem;
     }
-    .section-5 .contact-links .contact-link-button{
+    .section-6 .contact-links .contact-link-button{
         font-size: 1.5em;
     }  
 }
